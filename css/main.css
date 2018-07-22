@@ -1,0 +1,61 @@
+
+
+/******************** Global scope  *******************/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Crete Round', serif;
+}
+
+h1{
+  margin: 0;
+  font-family: 'Old Standard TT', serif;
+}
+
+hr{
+  width: 92%;
+  border: none;
+	border-top: 5px solid;
+	border-bottom: 2px solid;
+	padding-bottom: 2px;
+  margin: 0 auto 15px auto;
+}
+
+
+/******************** Header section  *******************/
+
+
+.header{
+  text-align: center;
+}
+
+.headerTitle{
+  background-color: rgb(36, 38, 35);
+  color: #fff;
+  padding: 5vh 3vw;
+  font-size: 3vw;
+}
+
+.intro{
+  padding: 5vh 4vw 8vh 4vw;
+  font-size: 3vw;
+}
+
+.signUp{
+  margin-bottom: 3vh;
+  font-weight: 900;
+}
+
+.desc{
+  color: rgb(185, 185, 185);
+}
+
+
+/******************** Main section  *******************/
+
+.contactInformation,
+.newsLetter{
+  border: none;
