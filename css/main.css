@@ -59,3 +59,24 @@ hr{
 .contactInformation,
 .newsLetter{
   border: none;
+}
+
+.contactInformation,
+.newsLetter{
+  padding: 5vh 4vw 8vh 4vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactInformation > .row{
+  margin-bottom: 3vh;
+}
+
+.row > label{
+
+}
+
+.row > input, select{
+  width: 100%;
+  margin-top: 1vh;
+}

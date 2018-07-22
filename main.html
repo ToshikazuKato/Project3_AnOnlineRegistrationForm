@@ -28,19 +28,104 @@
       <form action="main.html" method="post" name="">
         <fieldset class="contactInformation" id="contact">
           <legend>Contact Information</legend>
-          <label for="name">Full Name</label>
-          <input id="name" type="text" name="full_name" placeholder="Required" required>
-          <label for="email">Email Address</label>
-          <input id="email" type="email" name="email" placeholder="Required" required>
-          <label for=""></label>
-          <input type="text">
-          <label for=""></label>
-          <input type="text">
-          <label for=""></label>
-          <input type="text">
+          <div class="row">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="full_name" placeholder="Required" pattern="[a-zA-Z]{5,}" title="Minimum 5 letters required" required>
+          </div>
+          <div class="row">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" placeholder="Required"  required>
+          </div>
+          <div class="row">
+            <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" type="tel" name="phone_number">
+          </div>
+          <div class="row">
+            <label for="streetAddress">Street Address</label>
+            <input id="streetAddress" type="text" name="street_address">
+          </div>
+          <div class="row">
+            <label for="city">City</label>
+            <input id="city" type="text" name="city">
+          </div>
+          <div class="row">
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option selected disabled value="">Choose State</option>
+  							<option value="alabama">Alabama</option>
+  							<option value="alaska">Alaska</option>
+  							<option value="arizona">Arizona</option>
+  							<option value="arkansas">Arkansas</option>
+  							<option value="california">California</option>
+  							<option value="colorado">Colorado</option>
+  							<option value="connecticut">Connecticut</option>
+  							<option value="delaware">Delaware</option>
+  							<option value="florida">Florida</option>
+  							<option value="georgia">Georgia</option>
+  							<option value="hawaii">Hawaii</option>
+  							<option value="idaho">Idaho</option>
+  							<option value="illinois">Illinois</option>
+  							<option value="indiana">Indiana</option>
+  							<option value="iowa">Iowa</option>
+  							<option value="kansas">Kansas</option>
+  							<option value="kentucky">Kentucky</option>
+  							<option value="louisiana">Louisiana</option>
+  							<option value="maine">Maine</option>
+  							<option value="maryland">Maryland</option>
+  							<option value="massachusetts">Massachusetts</option>
+  							<option value="michigan">Michigan</option>
+  							<option value="minnesota">Minnesota</option>
+  							<option value="mississippi">Mississippi</option>
+  							<option value="missouri">Missouri</option>
+  							<option value="montana">Montana</option>
+  							<option value="nebraska">Nebraska</option>
+  							<option value="nevada">Nevada</option>
+  							<option value="new_hampshire">NewHampshire</option>
+  							<option value="new_jersey">NewJersey</option>
+  							<option value="new_mexico">NewMexico</option>
+  							<option value="new_york">NewYork</option>
+  							<option value="north_carolina">NorthCarolina</option>
+  							<option value="north_dakota">NorthDakota</option>
+  							<option value="ohio">Ohio</option>
+  							<option value="oklahoma">Oklahoma</option>
+  							<option value="oregon">Oregon</option>
+  							<option value="pennsylvania">Pennsylvania</option>
+  							<option value="rhode_island">RhodeIsland</option>
+  							<option value="south_carolina">SouthCarolina</option>
+  							<option value="south_dakota">SouthDakota</option>
+  							<option value="tennessee">Tennessee</option>
+  							<option value="texas">Texas</option>
+  							<option value="utah">Utah</option>
+  							<option value="vermont">Vermont</option>
+  							<option value="virginia">Virginia</option>
+  							<option value="washington">Washington</option>
+  							<option value="west_virginia">WestVirginia</option>
+  							<option value="wisconsin">Wisconsin</option>
+  							<option value="wyoming">Wyoming</option>
+  							<option value="other">Other</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="zipCode">Zip Code</label>
+            <input id="zipCode" type="text" name="zip_code">
+          </div>
         </fieldset>
+
+
+        <hr>
+
+
         <fieldset class="newsLetter" id="newsletter">
           <legend>News Letter</legend>
+          <label for="checkBox">Select the newsletter you would like to receive</label>
+          <label for="htmlNews"><input id="htmlNews" type="checkbox" name="checkbox" value="html">HTML News</label>
+          <label for="cssNews"><input id="cssNews" type="checkbox" name="checkbox" value="css">CSS News</label>
+          <label for="javascriptNews"><input id="javascriptNews" type="checkbox" name="checkbox" value="javascript">JavaScript News</label>
+          <label>Newsletter format</label>
+          <label><input id="htmlFormat" type="radio" name="format" value="html">HTML</label>
+          <label><input id="plaintextFormat" type="radio" name="format" value="plain">Plain text</label>
+          <label for="">Other topics you'd like to hear about</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
         </fieldset>
       </form>
 
