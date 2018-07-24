@@ -13,6 +13,7 @@
 h1{
   margin: 0;
   font-family: 'Old Standard TT', serif;
+  font-size: 8vw;
 }
 
 hr{
@@ -22,6 +23,10 @@ hr{
 	border-bottom: 2px solid;
 	padding-bottom: 2px;
   margin: 0 auto 15px auto;
+}
+
+legend{
+  font-size: 8vw;
 }
 
 
@@ -63,20 +68,150 @@ hr{
 
 .contactInformation,
 .newsLetter{
-  padding: 5vh 4vw 8vh 4vw;
+  padding: 5vh 4vw 0vh 4vw;
   display: flex;
   flex-wrap: wrap;
 }
 
-.contactInformation > .row{
+.contactInformation > .row,
+.newsLetter > .row{
   margin-bottom: 3vh;
 }
 
 .row > label{
-
+  font-family: 'Crete Round', serif;
+  color: rgb(185, 185, 185);
 }
 
 .row > input, select{
   width: 100%;
+  height: 7%;
   margin-top: 1vh;
+  padding: 0 5vw;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(231, 231, 231);
+}
+
+#zipCode{
+  width: 40%;
+  display: block;
+}
+
+#textarea{
+  background-color: rgb(231, 231, 231);
+  border: none;
+  margin-bottom: 5vh;
+}
+
+#state{
+  padding: 0 5vw;
+  color: rgb(185, 185, 185);
+}
+
+[type="checkbox"],
+[type="radio"]{
+  margin-right: 3vw;
+}
+
+.btn{
+  width: 95%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: rgb(124, 158, 223);
+  height: 10vh;
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+.newsLetter > .row > label{
+  display: block;
+}
+
+.widthAdjust{
+  width: 95%;
+}
+
+::placeholder{
+  color: rgb(168, 168, 168);
+  text-align: right;
+  opacity: 0.7;
+  font-family: 'Old Standard TT', serif;
+}
+
+:focus{
+  outline: 3px solid rgb(124, 158, 223);
+}
+
+/******************** Footer section  *******************/
+
+
+.copyright{
+  width: 95%;
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+  text-align: center;
+  font-size: 2.5vw;
+  color: rgb(168, 168, 168);
+  opacity: 0.7;
+}
+
+
+
+/******************** Media query  *******************/
+
+
+@media screen and (min-width: 768px){
+
+  h1,legend{
+    font-size: 4vw;
+  }
+
+  .desc{
+    font-size: 3vw;
+  }
+
+  .contactInformation > .row{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .contactInformation > .row > label{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 30%;
+    height: 6vh;
+  }
+
+  .row > input,
+  #state{
+    margin-top: 0;
+    width: 70%;
+    padding: 0 2vw;
+    height: 6vh;
+  }
+
+  #zipCode{
+    margin-top: 0;
+    margin-right: auto;
+  }
+
+  #textarea{
+    height:13vh;
+  }
+
+  [type="checkbox"],
+  [type="radio"]{
+    margin-right: 1vw;
+  }
+
+
+
+  .copyright{
+    font-size: 1.5vw;
+  }
+
 }
