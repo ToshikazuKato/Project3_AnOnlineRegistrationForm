@@ -16,13 +16,20 @@ h1{
   font-size: 8vw;
 }
 
-hr{
+.hr{
   width: 92%;
   border: none;
 	border-top: 5px solid;
 	border-bottom: 2px solid;
 	padding-bottom: 2px;
   margin: 0 auto 15px auto;
+}
+
+hr{
+  width: 100%;
+  border: none;
+  border-top: 3px solid;
+  margin: 7vh auto 7vh auto;
 }
 
 legend{
@@ -83,7 +90,7 @@ legend{
   color: rgb(185, 185, 185);
 }
 
-.row > input, select{
+.inputField, #state{
   width: 100%;
   height: 7%;
   margin-top: 1vh;
@@ -91,6 +98,22 @@ legend{
   border: none;
   border-radius: 6px;
   background-color: rgb(231, 231, 231);
+  cursor: pointer;
+}
+
+.inputField:hover,
+#state:hover,
+#textarea:hover{
+  background-color: rgb(96, 96, 96);
+  transition: 0.5s;
+}
+
+.inputField:focus,
+#state:focus,
+#textarea:focus{
+  background-color: rgb(124, 158, 223);
+  transition: 0.5s;
+  color: #fff;
 }
 
 #zipCode{
@@ -102,6 +125,9 @@ legend{
   background-color: rgb(231, 231, 231);
   border: none;
   margin-bottom: 5vh;
+  border-radius: 6px;
+  padding: 2vh 2vw;
+  cursor: pointer;
 }
 
 #state{
@@ -115,14 +141,20 @@ legend{
 }
 
 .btn{
-  width: 95%;
+  width: 100%;
   border-radius: 5px;
   border: none;
   color: #fff;
   background-color: rgb(124, 158, 223);
   height: 10vh;
-  font-size: 3vw;
+  font-size: 6vw;
   cursor: pointer;
+}
+
+.btn:hover{
+  color: rgb(124, 158, 223);
+  background-color: #fff;
+  transition: .3s;
 }
 
 .newsLetter > .row > label{
@@ -130,7 +162,16 @@ legend{
 }
 
 .widthAdjust{
-  width: 95%;
+  width: 100%;
+}
+
+.select{
+  margin-bottom: 3vh;
+}
+
+[type="radio"]:visited,
+[type="checkbox"]:checked{
+  border: none;
 }
 
 ::placeholder{
@@ -138,6 +179,10 @@ legend{
   text-align: right;
   opacity: 0.7;
   font-family: 'Old Standard TT', serif;
+}
+
+#textarea::placeholder{
+  text-align: left;
 }
 
 :focus{
@@ -186,7 +231,7 @@ legend{
     height: 6vh;
   }
 
-  .row > input,
+  .inputField,
   #state{
     margin-top: 0;
     width: 70%;
@@ -208,7 +253,9 @@ legend{
     margin-right: 1vw;
   }
 
-
+  .btn{
+    font-size: 3vw;
+  }
 
   .copyright{
     font-size: 1.5vw;

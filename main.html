@@ -21,12 +21,11 @@
       </div>
     </header>
 
-    <hr>
-
     <main>
-
-      <form action="main.html" method="post" name="">
+      <hr class="hr">
+      <form action="main.html" method="post">
         <fieldset class="contactInformation" id="contact">
+
           <legend>Contact Information</legend>
           <div class="row">
             <label for="name">Full Name</label>
@@ -38,15 +37,15 @@
           </div>
           <div class="row">
             <label for="phoneNumber">Phone Number</label>
-            <input id="phoneNumber" type="tel" name="phone_number" class="inputField">
+            <input id="phoneNumber" type="tel" name="phone_number" class="inputField" placeholder="Phone number" required>
           </div>
           <div class="row">
             <label for="streetAddress">Street Address</label>
-            <input id="streetAddress" type="text" name="street_address" class="inputField">
+            <input id="streetAddress" type="text" name="street_address" class="inputField" placeholder="Your address" required>
           </div>
           <div class="row">
             <label for="city">City</label>
-            <input id="city" type="text" name="city" class="inputField">
+            <input id="city" type="text" name="city" class="inputField" placeholder="City" required>
           </div>
           <div class="row">
             <label for="state">State</label>
@@ -107,35 +106,34 @@
           </div>
           <div class="row">
             <label for="zipCode" class="zipCodeLabel">Zip Code</label>
-            <input id="zipCode" type="text" name="zip_code" class="inputField">
+            <input id="zipCode" type="text" name="zip_code" class="inputField" placeholder="Zip code" required>
           </div>
+
+          <hr>
+
         </fieldset>
-
-
-        <hr>
-
 
         <fieldset class="newsLetter" id="newsletter">
           <legend>News Letter</legend>
           <div class="row">
-            <label for="checkBox" class="widthAdjust">Select the newsletter you would like to receive</label>
+            <label class="widthAdjust">Select the newsletter you would like to receive</label>
           </div>
           <div class="row">
-            <label for="htmlNews"><input id="htmlNews" type="checkbox" name="checkbox" value="html">HTML News</label>
-            <label for="cssNews"><input id="cssNews" type="checkbox" name="checkbox" value="css">CSS News</label>
-            <label for="javascriptNews"><input id="javascriptNews" type="checkbox" name="checkbox" value="javascript">JavaScript News</label>
+            <label for="htmlNews" class="select"><input id="htmlNews" type="checkbox" name="checkbox" value="html">HTML News</label>
+            <label for="cssNews" class="select"><input id="cssNews" type="checkbox" name="checkbox" value="css">CSS News</label>
+            <label for="javascriptNews" class="select"><input id="javascriptNews" type="checkbox" name="checkbox" value="javascript">JavaScript News</label>
           </div>
           <div class="row">
             <label>Newsletter format</label>
           </div>
           <div class="row">
-            <label><input id="htmlFormat" type="radio" name="format" value="html">HTML</label>
-            <label><input id="plaintextFormat" type="radio" name="format" value="plain">Plain text</label>
+            <label class="select" for="htmlFormat"><input id="htmlFormat" type="radio" name="format" value="html">HTML</label>
+            <label class="select" for="plaintextFormat"><input id="plaintextFormat" type="radio" name="format" value="plain">Plain text</label>
           </div>
           <div class="row">
-            <label class="widthAdjust">Other topics you'd like to hear about</label>
+            <label class="widthAdjust" for="textarea">Other topics you'd like to hear about</label>
           </div>
-          <textarea class="widthAdjust" name="textarea" id="textarea" cols="30" rows="3"></textarea>
+          <textarea class="widthAdjust" name="textarea" id="textarea" cols="30" rows="3" placeholder="Please comment"></textarea>
 
           <input type="submit" name="submit" value="Sign up" class="btn">
 
